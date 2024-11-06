@@ -103,3 +103,18 @@ h1 {
   text-align: center;
   margin-top: 4rem; 
 }
+
+#wrapper {
+	width: 900px;
+	height: 600px;
+	background-color: c00;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#canvas{
+	width: 700px;
+	height: 500px;
+	background-color: #ccc;
+	margin: 30px auto;
+}
