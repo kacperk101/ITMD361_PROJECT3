@@ -27,9 +27,17 @@
 
   <script>
     function initMap() {
+      const iitCoords = { lat: 41.8350, lng: -87.6272 };
+
       const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 41.8350, lng: -87.6272 },  // Coordinates for IIT MTCC
-        zoom: 15,
+        center: iitCoords,
+        zoom: 7,
+      });
+
+      const marker = new google.maps.Marker({
+        position: iitCoords,  
+        map: map,  
+        title: "IIT MTCC",  
       });
     }
   </script>
@@ -38,5 +46,3 @@
 
 </body>
 </html>
-
-
