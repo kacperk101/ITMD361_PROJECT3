@@ -9,8 +9,19 @@
   <script src="js/script.js"></script>
 </head>
 
-<body id="moviesbody">
-
+<body>
+  <div id="map"></div>
+	<script>
+	var map;
+	function initMap(){
+	  map = new google.maps.Map(document.getElementById('map'),{
+	    center: {lat: 41.8356, lng: 87.6259},
+		zoom: 7
+	});
+}
+    </script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnszNc4QTg9YVufMA0pHSxsf 2eYwyQro&callback=initMap">
+	</script>
   <header>
     <nav class="navbar">
       <ul class="nav-menu">
@@ -21,3 +32,8 @@
       </ul>
     </nav>
   </header>
+  
+  <h1>Kacper Kraj's Google Maps API</h1>
+  
+</body>
+</html>
