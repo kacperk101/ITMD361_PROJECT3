@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>My Favorite TV Shows</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script async type="text/javascript" src="js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Example</title>
 </head>
-
 <body>
-  <div id="wrapper"></div>
-    <div id="canvas"></div>
-  </div>
-  
-  <header>
-    <nav class="navbar">
-      <ul class="nav-menu">
-        <li><a href="index.html">Resume</a></li>
-        <li><a href="favoritemoviesandshows.html">My Favorite TV Shows</a></li>
-        <li><a href="myfavoritecars.html">My Favorite Cars</a></li>
-		<li><a href="maps.html">Google Maps</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <h1>Kacper Kraj's Google Maps API</h1>
-  
+
+<div id="map"></div>
+
+<script>
+  let map;
+
+  async function initMap() {
+    const { Map } = await google.maps.importLibrary("maps");
+
+    map = new Map(document.getElementById("map"), {
+      center: { lat: -34.397, lng: 150.644 },
+      zoom: 8,
+    });
+  }
+
+  initMap();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnszNc4QTg9YVufMA0pHSxsf_2eYwyQro&v=beta" async defer></script>
+
 </body>
 </html>
