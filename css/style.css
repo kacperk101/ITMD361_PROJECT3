@@ -1,0 +1,105 @@
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #131313; 
+  color: #FFFFFF; 
+  line-height: 1.6; 
+  margin: 0; 
+  padding: 0;
+ background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+ linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+ linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+ linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+ linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+   background-color: #131313; 
+    background-size: 20px 20px;
+    min-height: 100vh; 
+    color: #FFFFFF; 
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #333;
+  z-index: 1000;
+}
+
+.navbar {
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.nav-menu li {
+  margin: 0 1rem;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: #f4f4f4;
+}
+
+#sidebar {
+  float: left;
+  width: 20%;
+  padding: 1rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+}
+
+#main-content {
+  margin-left: 22%;
+  padding: 2rem;
+  padding-top: 4rem;
+}
+
+
+section {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  border-bottom: 3px solid #000000;
+}
+
+#tlou, #breakingbad, #thebear, #moneyheist, #strangerthings {
+  margin: 2rem 0;
+  overflow: auto;
+}
+
+#tlou img, #breakingbad img, #thebear img, #moneyheist img, #strangerthings img {
+  float: left;
+  margin-right: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #333;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 4rem; 
+}
