@@ -34,20 +34,32 @@
         zoom: 15,
       });
 
+      const customIcon = {
+        url: "media/iitlogo.png",  
+        size: new google.maps.Size(32, 32),  
+        origin: new google.maps.Point(0, 0), 
+        anchor: new google.maps.Point(16, 32),  
+      };
+
       const marker = new google.maps.Marker({
         position: iitCoords,  
         map: map,  
         title: "IIT MTCC",  
+        icon: customIcon,  
       });
-	  
-	   const infoWindow = new google.maps.InfoWindow({
-        content: "<h3>IIT MTCC</h3><p>Welcome to IIT MTCC, Chicago!</p>",  
+
+      const infoWindow = new google.maps.InfoWindow({
+        content: `
+          <div class="info-window-content">
+            <h3>IIT MTCC</h3>
+            <p>Welcome to IIT MTCC, Chicago!</p>
+          </div>
+        `,  
       });
 
       marker.addListener("click", function() {
         infoWindow.open(map, marker);  
       });
-	  
     }
   </script>
 
