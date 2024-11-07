@@ -123,12 +123,6 @@ h1 {
   align-items: center;
 }
 
-@media (min-width: 600px) {
-  .nav-menu {
-    flex-direction: row;
-    justify-content: center;
-  }
-
 .nav-menu li {
     margin: 0 1.5rem;
   }
@@ -153,12 +147,6 @@ h2 {
     padding: 2.5rem;
   }
 }
-
-@media (min-width: 900px) {
-  body {
-    max-width: 1200px;
-    margin: auto;
-  }
 
 header {
     padding: 20px;
@@ -186,5 +174,17 @@ h1 {
 
 #listofshowsandmovies div {
     width: 45%;
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    padding-top: 9rem; /* More spacing on medium screens */
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    padding-top: 10rem; /* Even more spacing on larger screens */
   }
 }
