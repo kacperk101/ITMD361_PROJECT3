@@ -36,9 +36,9 @@ header {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: flex; 
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 .nav-menu li {
@@ -101,7 +101,7 @@ footer {
 
 h1 {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 6rem; 
 }
 
 .map-wrapper {
