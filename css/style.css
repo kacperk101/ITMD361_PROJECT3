@@ -133,15 +133,3 @@ h2 {
 #listofshowsandmovies div {
   width: 45%;
 }
-
-@media (min-width: 600px) {
-  body {
-    padding-top: 9rem; /* More spacing on medium screens */
-  }
-}
-
-@media (min-width: 900px) {
-  body {
-    padding-top: 10rem; /* Even more spacing on larger screens */
-  }
-}
