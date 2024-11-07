@@ -97,7 +97,6 @@ footer {
 h1 {
   text-align: center;
   margin-top: 6rem;
-  font-size: 2.5em;
 }
 
 h2 {
@@ -124,12 +123,4 @@ h2 {
   align-items: center;
 }
 
-#listofshowsandmovies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
-#listofshowsandmovies div {
-  width: 45%;
-}
