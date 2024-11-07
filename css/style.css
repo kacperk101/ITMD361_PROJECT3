@@ -1,23 +1,19 @@
 body {
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-  background-color: #131313; 
-  color: #FFFFFF; 
-  line-height: 1.6; 
-  margin: 0; 
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+              linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+              linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+              linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+              linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+              linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  min-height: 100vh;
+  color: #FFFFFF;
+  line-height: 1.6;
+  margin: 0;
   padding: 0;
- background:
-  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
- linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
- linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
- linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
- linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-   background-color: #131313; 
-    background-size: 20px 20px;
-    min-height: 100vh; 
-    color: #FFFFFF; 
 }
-
 
 header {
   position: fixed;
@@ -25,6 +21,7 @@ header {
   top: 0;
   background-color: #333;
   z-index: 1000;
+  padding: 20px;
 }
 
 .navbar {
@@ -36,13 +33,13 @@ header {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; 
+  display: flex;
   justify-content: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .nav-menu li {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
 }
 
 .nav-menu a {
@@ -56,17 +53,15 @@ header {
 }
 
 #sidebar {
-  float: left;
-  width: 20%;
-  padding: 1rem;
+  width: 25%;
+  padding: 1.5rem;
   background-color: #2a2a2a;
   border-radius: 8px;
 }
 
 #main-content {
-  margin-left: 22%;
-  padding: 2rem;
-  padding-top: 4rem;
+  margin-left: 27%;
+  padding: 2.5rem;
 }
 
 section {
@@ -101,7 +96,13 @@ footer {
 
 h1 {
   text-align: center;
-  margin-top: 6rem; 
+  margin-top: 6rem;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.75em;
+  margin-top: 20px;
 }
 
 .map-wrapper {
@@ -123,68 +124,24 @@ h1 {
   align-items: center;
 }
 
-.nav-menu li {
-    margin: 0 1.5rem;
-  }
-
-h1 {
-    font-size: 2em;
-    margin-top: 5rem;
-  }
-
-h2 {
-    font-size: 1.75em;
-    margin-top: 20px;
-  }
-
-#sidebar {
-    width: 25%;
-    padding: 1.5rem;
-  }
-
-  #main-content {
-    margin-left: 27%;
-    padding: 2.5rem;
-  }
+#listofshowsandmovies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-header {
-    padding: 20px;
-  }
-
-.nav-menu {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-h1 {
-    font-size: 2.5em;
-  }
-
-#main-content {
-    margin-left: 30%;
-    padding: 3rem;
-  }
-
-#listofshowsandmovies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
 #listofshowsandmovies div {
-    width: 45%;
-  }
+  width: 45%;
 }
 
 @media (min-width: 600px) {
-  main {
+  body {
     padding-top: 9rem; /* More spacing on medium screens */
   }
 }
 
 @media (min-width: 900px) {
-  main {
+  body {
     padding-top: 10rem; /* Even more spacing on larger screens */
   }
 }
