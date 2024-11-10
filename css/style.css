@@ -170,3 +170,15 @@ h2 {
     font-size: 2.5rem;
   }
 }
+
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  height: auto;
+  display: none; /* Hide all images initially */
+}
