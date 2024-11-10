@@ -178,7 +178,9 @@ h2 {
 }
 
 .slider {
-  width: 100%;
+   width: 100%;  
+  max-width: 600px; 
   height: auto;
-  display: none; /* Hide all images initially */
+  display: none; 
+  margin: 0 auto; 
 }
